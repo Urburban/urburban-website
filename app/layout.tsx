@@ -33,6 +33,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="min-h-screen bg-[#062225] text-[#e38d4f] antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              name: "Urburban Designs",
+              url: "https://urburban.vercel.app",
+              description: "B2B AI services with privacy-first approach.",
+              areaServed: "Worldwide",
+            }),
+          }}
+        />
         <Navbar />
         <main>{children}</main>
         <Footer />
