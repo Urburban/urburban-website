@@ -8,7 +8,7 @@ export default function ContactPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const response = await fetch("/api/quote", {
+    const response = await fetch("/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
@@ -17,13 +17,13 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#062225] text-[#e38d4f] py-16">
+    <main className="min-h-screen bg-[#062225] py-16">
       <div className="max-w-2xl mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8">Contact Urburban Designs</h1>
+        <h1 className="text-4xl font-bold text-[#e38d4f] mb-8">Contact Us</h1>
         {!submitted ? (
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-sm font-medium mb-2">Name</label>
+              <label className="block text-sm font-medium text-[#e38d4f]/70 mb-2">Name</label>
               <input
                 type="text"
                 required
@@ -34,7 +34,7 @@ export default function ContactPage() {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-2">Email</label>
+              <label className="block text-sm font-medium text-[#e38d4f]/70 mb-2">Email</label>
               <input
                 type="email"
                 required
@@ -45,7 +45,7 @@ export default function ContactPage() {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-2">Message</label>
+              <label className="block text-sm font-medium text-[#e38d4f]/70 mb-2">Message</label>
               <textarea
                 required
                 rows={5}
@@ -62,7 +62,7 @@ export default function ContactPage() {
         ) : (
           <div className="rounded-lg bg-green-50 p-6 text-green-800">
             <h2>Thank you!</h2>
-            <p>We'll respond within 24 hours.</p>
+            <p>We'll get back to you within 24 hours.</p>
           </div>
         )}
       </div>
