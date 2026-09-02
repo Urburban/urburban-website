@@ -29,11 +29,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className="min-h-screen bg-[#062225] text-[#e38d4f] antialiased">
@@ -65,10 +61,7 @@ function Navbar() {
           <Link href="/about" className="text-sm font-medium text-[#e38d4f]/80 hover:text-[#e38d4f]">About</Link>
           <Link href="/contact" className="text-sm font-medium text-[#e38d4f]/80 hover:text-[#e38d4f]">Contact</Link>
         </nav>
-        <Link
-          href="/contact"
-          className="rounded-full bg-[#e38d4f] text-[#062225] px-4 py-2 text-sm font-medium hover:bg-[#c47a41]"
-        >
+        <Link href="/contact" className="rounded-full bg-[#e38d4f] text-[#062225] px-4 py-2 text-sm font-medium hover:bg-[#c47a41]">
           Request Quote
         </Link>
       </div>
