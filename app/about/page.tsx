@@ -16,7 +16,7 @@ export default function AboutPage() {
             Urburban Designs specializes in high-value B2B AI services, including document summarization, white paper creation, and custom AI automation. We are committed to privacy-first solutions that keep your business data on your own servers.
           </p>
           <p>
-            One of our frameworks, is an AI system built for local, private use. We help businesses leverage this technology to automate processes, extract insights, and generate professional reports—all without cloud dependency.          </p>
+            Our framework, is an AI system built for local, private use. We help businesses leverage this technology to automate processes, extract insights, and generate professional reports—all without cloud dependency.          </p>
           <p>
             Whether you need a quick summary of a 100-page contract or a fully custom AI agent, we deliver quality work with complete confidentiality.
           </p>
