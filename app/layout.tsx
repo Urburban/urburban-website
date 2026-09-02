@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | Urburban Designs",
   },
   description: "Urburban Designs offers high-value B2B AI services: document summarization, white papers, custom AI agents. Your data stays private.",
-  keywords: ["privacy-first AI", "document summarization", "white paper", "custom AI agent", "Urburban"],
+  keywords: ["privacy-first AI", "document summarization", "Local RAG Systems", "white paper", "custom AI agent", "Urburban"],
   openGraph: {
     type: "website",
     locale: "en_US",
