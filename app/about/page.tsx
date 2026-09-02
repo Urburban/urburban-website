@@ -1,11 +1,9 @@
-import Link from "next/link";
-
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-[#062225] text-[#e38d4f] py-16">
+    <main className="min-h-screen bg-[#062225] py-16">
       <div className="max-w-4xl mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8">About Urburban Designs</h1>
-        <section className="space-y-4 text-lg text-[#e38d4f]/80">
+        <h1 className="text-4xl font-bold text-[#e38d4f] mb-8">About Urburban Designs</h1>
+        <div className="space-y-4 text-lg text-[#e38d4f]/70">
           <p>
             Urburban Designs specializes in high-value B2B AI services, including document summarization, white paper creation, and custom AI automation. We are committed to privacy-first solutions that keep your business data on your own servers.
           </p>
@@ -15,12 +13,10 @@ export default function AboutPage() {
           <p>
             Whether you need a quick summary of a 100-page contract or a fully custom AI agent, we deliver quality work with complete confidentiality.
           </p>
-        </section>
-        <div className="mt-8">
-          <Link href="/services" className="text-[#e38d4f] underline hover:text-[#c47a41]">
-            Explore our services →
-          </Link>
         </div>
+        <Link href="/services" className="mt-8 inline-block text-[#e38d4f] underline hover:text-[#c47a41]">
+          Explore our services →
+        </Link>
       </div>
     </main>
   );
