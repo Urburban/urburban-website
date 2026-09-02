@@ -1,9 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
 export const metadata: Metadata = {
   title: "B2B AI Services | Document Summarization, White Papers, Custom AI Agents | Urburban",
   description: "High-value B2B AI services: document summarization, white paper writing, data enrichment, and custom AI agents. Privacy-first with local AI.",
   keywords: ["document summarization", "white paper writing", "B2B AI services", "data enrichment", "custom AI agents", "privacy-first"],
 };
+
 export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-[#062225]">
