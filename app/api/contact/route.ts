@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
 
   const { error } = await resend.emails.send({
     from: "Urburban <onboarding@resend.dev>", // Replace with verified domain later
-    to: "Urburban.Designs@protonmail.com", // Your ProtonMail inbox
+    to: "Urburban.Designs@protonmail.com",   // Your inbox
     subject: `New Contact: ${name}`,
     html: `<p>A new contact form submission:</p>
            <p><strong>Name:</strong> ${name}</p>
