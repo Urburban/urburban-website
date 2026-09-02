@@ -1,0 +1,27 @@
+import Link from "next/link";
+
+export default function AboutPage() {
+  return (
+    <main className="min-h-screen bg-[#062225] text-[#e38d4f] py-16">
+      <div className="max-w-4xl mx-auto px-4">
+        <h1 className="text-4xl font-bold mb-8">About Urburban Designs</h1>
+        <section className="space-y-4 text-lg text-[#e38d4f]/80">
+          <p>
+            Urburban Designs specializes in high-value B2B AI services, including document summarization, white paper creation, and custom AI automation. We are committed to privacy-first solutions that keep your business data on your own servers.
+          </p>
+          <p>
+            Our framework, MAi-RAG-PA, is an open-source AI system built for local, private use. We help businesses leverage this technology to automate processes, extract insights, and generate professional reports—all without cloud dependency.
+          </p>
+          <p>
+            Whether you need a quick summary of a 100-page contract or a fully custom AI agent, we deliver quality work with complete confidentiality.
+          </p>
+        </section>
+        <div className="mt-8">
+          <Link href="/services" className="text-[#e38d4f] underline hover:text-[#c47a41]">
+            Explore our services →
+          </Link>
+        </div>
+      </div>
+    </main>
+  );
+}
